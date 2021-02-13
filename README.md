@@ -1,5 +1,13 @@
 # Fork from (dotsha747)[https://github.com/dotsha747/WiringPi-Sim]
 
+# Installation
+
+```bash
+git clone https://github.com/iwishiwasaneagle/wiringPi-sim
+mkdir wiringPi-sim
+./install.sh
+```
+
 # Old README
 
 ```
