@@ -1,4 +1,4 @@
-### Fork from [dotsha747](https://github.com/dotsha747/WiringPi-Sim)
+Forked from [dotsha747](https://github.com/dotsha747/WiringPi-Sim) due to inactivity
 
 # Installation
 
