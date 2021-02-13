@@ -1,6 +1,8 @@
+# WiringPi-Sim
+
 Forked from [dotsha747](https://github.com/dotsha747/WiringPi-Sim) due to inactivity
 
-# Installation
+## Installation
 
 ```bash
 git clone https://github.com/iwishiwasaneagle/wiringPi-sim
@@ -8,7 +10,7 @@ mkdir wiringPi-sim
 ./install.sh
 ```
 
-# Old README
+## Old README
 
 ```
 *** A Dummy Wiring-Pi Library ***
