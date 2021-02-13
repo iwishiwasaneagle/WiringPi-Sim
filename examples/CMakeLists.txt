@@ -10,7 +10,7 @@ foreach(example_source_file ${EXAMPLE_SOURCE_FILES})
     get_filename_component( example_out_file ${example_source_file} NAME_WE )
     set(example_out_file "${example_out_file}.out")
     
-    message(STATUS "Building ${example_source_file} as ${example_out_file}" )
+    message(STATUS "Configuring ${example_source_file} to compile to ${example_out_file}" )
 
     add_executable(${example_out_file} ${example_source_file})
 
