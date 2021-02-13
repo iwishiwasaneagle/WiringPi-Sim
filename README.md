@@ -1,6 +1,6 @@
 # WiringPi-Sim
 
-Forked from [dotsha747](https://github.com/dotsha747/WiringPi-Sim) due to inactivity
+Forked from [dotsha747](https://github.com/dotsha747/WiringPi-Sim) due to inactivity. I needed a few more wiringPi functions, such as `wiringPiISR`, and as such decided to revamp this repo.
 
 ## Installation
 
