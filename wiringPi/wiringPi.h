@@ -29,6 +29,8 @@
 extern "C" {
 #endif
 
+#include <wiringPi/version.h>
+
 /* constants and enums ... copied from original wiringPi.h */
 
 #ifndef TRUE
@@ -75,6 +77,8 @@ int wiringPiSetupPhys (void);
 
 int wiringPiSetupSys (void);
 
+int wiringPiISR (int pin, int edgeType, void (*function)(void));
+
 void pinMode (int pin, int mode);
 
 void pullUpDnControl (int pin, int pud);
@@ -99,6 +103,8 @@ void delay (unsigned int howLong);
 
 void delayMicroseconds (unsigned int howLong);
 
+/* version */
+void wiringPiVersion( int *major, int *minor);
 
 
 #ifdef __cplusplus

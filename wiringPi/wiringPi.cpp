@@ -56,6 +56,12 @@ int wiringPiSetupSys(void) {
 }
 ;
 
+int wiringPiISR (int pin, int edgeType, void (*function)(void))
+{
+    return 0;
+}
+;
+
 void pinMode(int pin, int mode) {
 }
 ;
@@ -128,7 +134,7 @@ unsigned int micros(void) {
 
 void delay(unsigned int howLongMillis) {
 
-	usleep (howLongMillis / 1000);
+	usleep (howLongMillis * 1000);
 }
 
 
@@ -136,3 +142,10 @@ void delayMicroseconds (unsigned int howLongMicros) {
 
 	usleep (howLongMicros);
 }
+
+
+/* version */
+void wiringPiVersion( int *major, int *minor){
+    *major = WIRINGPI_VERSION_MAJOR;
+    *minor = WIRINGPI_VERSION_MINOR;
+};
