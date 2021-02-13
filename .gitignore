@@ -50,3 +50,7 @@ _deps
 *.exe
 *.out
 *.app
+
+### Doxygen ###
+
+docs
