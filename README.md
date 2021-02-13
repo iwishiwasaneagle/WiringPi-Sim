@@ -17,6 +17,12 @@ To uninstall `cd` into `_build` and run `make uninstall`.
 
 The sole purpose of this library is to simulate wiringPi. As such, just use it like wiringPi. For examples on how to use, visit the [examples](./examples) folder.
 
+## Documentation
+
+```bash
+doxygen
+firefox docs/index.html
+``` 
 
 ## Old README
 
