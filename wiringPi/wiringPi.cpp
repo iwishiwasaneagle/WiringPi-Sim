@@ -1,10 +1,12 @@
 /*
- *  wiringPi.c
+ *  wiringPi.cpp
  *
  *  Created on: Jan 7, 2018
  *      Author: shahada
+ *  Modified and enhanced on: Feb 13, 2021
  *
  *  Copyright (c) 2018 Shahada Abubakar.
+ *  Copyright (c) 2021 Jan-Hendrik Ewers.
  *
  *  This file is part of WiringPi-Sim.
  *
