@@ -10,6 +10,11 @@ mkdir wiringPi-sim
 ./install.sh
 ```
 
+## Usage
+
+The sole purpose of this library is to simulate wiringPi. As such, just use it like wiringPi. For examples on how to use, visit the [examples](./examples) folder.
+
+
 ## Old README
 
 ```
