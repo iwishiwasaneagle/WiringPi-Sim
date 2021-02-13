@@ -5,10 +5,14 @@ Forked from [dotsha747](https://github.com/dotsha747/WiringPi-Sim) due to inacti
 ## Installation
 
 ```bash
+cd [YOUR DESIRED INSTALL DIR (such as /opt)]
 git clone https://github.com/iwishiwasaneagle/wiringPi-sim
 mkdir wiringPi-sim
 ./install.sh
 ```
+
+To uninstall cd` into `_build` and run `make uninstall`.
+
 
 ## Old README
 
