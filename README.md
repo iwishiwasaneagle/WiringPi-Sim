@@ -1,4 +1,4 @@
-# Fork from (dotsha747)[https://github.com/dotsha747/WiringPi-Sim]
+### Fork from [dotsha747](https://github.com/dotsha747/WiringPi-Sim)
 
 # Installation
 
