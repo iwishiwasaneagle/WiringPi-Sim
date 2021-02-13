@@ -1,3 +1,8 @@
+# Fork from (dotsha747)[https://github.com/dotsha747/WiringPi-Sim]
+
+# Old README
+
+```
 *** A Dummy Wiring-Pi Library ***
 
 WiringPi is an excellent library for accessing GPIO and other hardware on the
@@ -15,12 +20,8 @@ and have some UI that can toggle simulated switches and so on. Or maybe have it
 talk over the network to a Pi and interact with the real GPIO. But for now all
 I need is this stub library. 8-)
 
-
-Pre-build debian packages are available (compiled on Ubuntu 16.04LTS), to 
-install them:
-
 wget -O- http://repo.shahada.abubakar.net/pubkey.asc | sudo apt-key add -
 cd /etc/apt/sources.list.d
 sudo wget http://repo.shahada.abubakar.net/repo.shahada.abubakar.net.sources.list
 sudo apt-get install wiringpi-sim
-
+```
