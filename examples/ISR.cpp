@@ -15,26 +15,27 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <stdio.h>
 #include <wiringPi.h>
+#include <iostream>
 
 #define BUTTON_PIN 15
 
-volatile long time = 0;
+volatile long timer = 0;
 
 void interrupt(void){
-    if((millis()-time)<100){return;}
-    time = millis();
+    if((millis()-timer)<100){return;}
+    timer = millis();
 
     int val = 0;
     for(int i=0;i<10;i++){
         val += digitalRead(BUTTON_PIN);
     }
     float mean = val/(float)10;
+    std::cout << "Button state: ";
     if(mean>=0.5){
-        printf("Button state: 1\n");
+        std::cout << 1 << std::endl;
     }else{
-        printf("Button state: 0\n"); 
+        std::cout << 0 << std::endl;
     }
 }
 
@@ -45,8 +46,8 @@ int main(void){
     wiringPiISR(BUTTON_PIN, INT_EDGE_FALLING, &interrupt);
 
     long t = millis();
-    while(1){
-        printf("--> Main heartbeat at %ds \n", (t-millis())/1000);
+    for(int i=0;i<10;i++){
+        std::cout << "--> Main heartbeat at " <<(t-millis())/1000 << "s" << std::endl;
         delay(1000);
     }
     return 0;
