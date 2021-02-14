@@ -19,6 +19,7 @@
 #include <iostream>
 
 #define BUTTON_PIN 15
+#define DELAY 400
 
 volatile long timer = 0;
 
@@ -47,8 +48,8 @@ int main(void){
 
     long t = millis();
     for(int i=0;i<10;i++){
-        std::cout << "--> Main heartbeat at " <<(t-millis())/1000 << "s" << std::endl;
-        delay(1000);
+        std::cout << "ISR: Heartbeat at " <<(t-millis())/1000 << "s" << std::endl;
+        delay(DELAY);
     }
     return 0;
 }
