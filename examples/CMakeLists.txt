@@ -14,7 +14,7 @@ foreach(example_source_file ${EXAMPLE_SOURCE_FILES})
 
     add_executable(${example_out_file} ${example_source_file})
 
-    target_link_libraries(${example_out_file} PRIVATE wiringPi)
+    target_link_libraries(${example_out_file} PRIVATE ${WIRINGPI_LIBRARIES})
 
 endforeach( example_source_file ${EXAMPLE_SOURCE_FILES} )
 
