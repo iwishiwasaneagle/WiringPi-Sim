@@ -8,10 +8,10 @@ Forked from [dotsha747](https://github.com/dotsha747/WiringPi-Sim) due to inacti
 cd [YOUR DESIRED INSTALL DIR (such as /opt)]
 git clone https://github.com/iwishiwasaneagle/wiringPi-sim
 cd wiringPi-sim
-./install.sh
+sudo ./install.sh
 ```
 
-To uninstall `cd` into `_build` and run `make uninstall`.
+To uninstall `cd` into `_build` and run `sudo make uninstall`.
 
 ## Usage
 
