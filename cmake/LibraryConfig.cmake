@@ -5,10 +5,6 @@ add_library(${LIBRARY_NAME}
   ${HEADERS_PRIVATE}
   )
 
-# Alias:
-#   - Foo::foo alias of foo
-add_library(${PROJECT_NAME}::${LIBRARY_NAME} ALIAS ${LIBRARY_NAME})
-
 # C++11
 target_compile_features(${LIBRARY_NAME} PUBLIC cxx_std_11)
 
@@ -33,8 +29,8 @@ target_include_directories(
 
 # Targets:
 #   - <prefix>/lib/libfoo.a
-#   - header location after install: <prefix>/foo/foo.h
-#   - headers can be included by C++ code `#include <foo/foo.h>`
+#   - header location after install: <prefix>/foo.h
+#   - headers can be included by C++ code `#include <foo.h>`
 install(
     TARGETS              "${LIBRARY_NAME}"
     EXPORT               "${TARGETS_EXPORT_NAME}"
@@ -66,5 +62,4 @@ install(
   EXPORT      "${TARGETS_EXPORT_NAME}"
   FILE        "${PROJECT_NAME}Targets.cmake"
   DESTINATION "${CONFIG_INSTALL_DIR}"
-  NAMESPACE   "${PROJECT_NAME}::"
 )
